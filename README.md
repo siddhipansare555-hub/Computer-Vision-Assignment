@@ -1,34 +1,28 @@
-# Computer Vision Practical Assignment
+# Computer Vision Assignment: Restoration, Feature Extraction, Object Recognition & Motion Estimation
 
-## Overview
+This repository contains the complete Python source code and implementation for the Computer Vision assignment. The project covers image restoration, morphological processing, feature extraction (HOG/SIFT), object recognition (Haar Cascade & YOLOv8), and video motion estimation.
 
-This project explores how computers process images, improve image quality, extract visual features, recognize objects, and estimate motion in video streams. It covers foundational and modern computer vision techniques implemented in Python using OpenCV, scikit-image, NumPy, Matplotlib, and Ultralytics YOLOv8.
+---
 
-## Objectives
+## **Repository Contents**
+- **`src/` or `.ipynb`**: Python source scripts / Jupyter Notebooks implementing Tasks 1 through 4.
+- **`input/`**: Directory containing the input dataset (`original_photo.jpeg`, `second_photo.jpeg`, `video.mp4`).
+- **`outputs/`**: Generated result images and visualization masks.
+- **`requirements.txt`**: List of required Python packages.
 
-* Task 1: Image restoration using noise injection and filtering, followed by morphological processing and watershed segmentation.
-* Task 2: Feature extraction using Histogram of Oriented Gradients (HOG) and SIFT keypoint detection with Brute-Force matching and Lowe's ratio test.
-* Task 3: Object recognition using deep learning-based YOLOv8 detection.
-* Task 4: Video motion estimation using frame differencing, GMM background subtraction, and Lucas-Kanade optical flow.
+---
 
-## Technologies and Libraries
+## **Instructions for Obtaining and Organizing the Input Dataset**
+To run the code successfully, ensure your input files are placed in an `input/` folder relative to the scripts or notebooks:
+1. Place your primary photograph as `input/original_photo.jpeg`.
+2. Place your secondary scene photograph as `input/second_photo.jpeg`.
+3. Place your recorded video file as `input/video.mp4`.
 
-| Library or Tool | Purpose |
-| :--- | :--- |
-| Python | Main programming language |
-| OpenCV (`cv2`) | Image processing, feature detection, geometric transforms, video capture, and optical flow |
-| scikit-image (`skimage`) | Image quality metrics (PSNR, SSIM) and HOG feature extraction |
-| Ultralytics YOLO (`ultralytics`) | Deep learning-based object detection (`yolov8n.pt`) |
-| NumPy | Numerical operations and array manipulations |
-| Matplotlib | Visualizing intermediate and final image/video results |
-| Git and GitHub | Version control and project hosting |
+---
 
-## Project Structure
+## **Execution Steps**
 
-```text
-Computer-Vision-Project/
-├── input/                  # Input images and video dataset
-├── outputs/                # Generated processing results and visual outputs
-├── notebooks/              # Jupyter Notebooks containing implementation code
-├── requirements.txt        # Python package dependencies
-└── README.md               # Technical project documentation
+### **1. Environment Setup**
+Install the necessary dependencies by running:
+```bash
+pip install -r requirements.txt
